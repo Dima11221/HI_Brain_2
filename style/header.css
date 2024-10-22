@@ -1,0 +1,55 @@
+.bg-color-white {
+    background-color: var(--white-color);
+}
+
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 70px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.header-wrapper {
+    width: 100%;
+    /*width: 80%;*/
+}
+
+.search {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--light-grey);
+    border-radius: 50%;
+    opacity: 60%;
+    grid-column: 12;
+}
+
+.search::after {
+    content: '';
+    bottom: -1px;
+    left: 17px;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border-radius: 20%;
+    background-color: var(--light-grey);
+    transform: rotate(37deg); /*для вращения элемента*/
+}
+
+.btn-login {
+    height: 24px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: var(--light-grey);
+    background: url(../img/Group\ 671.svg) no-repeat left center;
+    grid-column: 11;
+    grid-row: 1;
+}
+
+.btn-login:hover {
+    color: var(--blue);
+}
+
+.header-buttons {
+    gap: 24px;
+}
